@@ -1,0 +1,13 @@
+{
+  "name": "bangla-dubbed-catalog",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "scrape": "node scripts/scrape.mjs",
+    "crawl": "node scripts/crawl-category.mjs",
+    "crawl:bangla": "node scripts/crawl-category.mjs https://cinefreak.net/bangla-dubbed/ 10",
+    "sync-data": "node scripts/sync-public.mjs",
+    "build": "node scripts/sync-public.mjs",
+    "dev": "node scripts/serve.mjs"
+  }
+}
